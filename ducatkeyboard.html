@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>keyboard</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 200px;
+            background-color: skyblue;
+            
+        }
+        .container {
+            border: 1px solid black;
+            width: 900px;
+            height: 300px;
+            display: grid;
+            grid-template-columns:repeat(12, 1fr);
+            grid-auto-rows: repeat(5, auto);
+            gap: 10px;
+            padding: 10px;
+            background-color: black;
+            border-radius: 10px;
+            
+            
+        }
+
+        .container>div {
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: aqua;
+            background-color: rgb(51, 49, 49);
+            border-radius: 10px;
+        }
+        .container>:nth-child(35){
+            grid-area: 3/11/4/13;
+        }
+        .container>:nth-child(46){
+            grid-area: 4/11/5/13;
+        }
+        .container>:nth-child(51){
+            grid-area: 5/5/6/9;
+
+        }
+        .container>div:active{
+            box-shadow: -2px -2px 5px white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>~</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>0</div>
+        <div>delete</div>
+
+        <!-- row-2 -->
+        <div>tab</div>
+        <div>q</div>
+        <div>w</div>
+        <div>e</div>
+        <div>r</div>
+        <div>t</div>
+        <div>y</div>
+        <div>u</div>
+        <div>i</div>
+        <div>o</div>
+        <div>p</div>
+        <div>|</div>
+
+        <!-- row-3 -->
+
+        <div>caps</div>
+        <div>a</div>
+        <div>s</div>
+        <div>d</div>
+        <div>f</div>
+        <div>g</div>
+        <div>h</div>
+        <div>j</div>
+        <div>k</div>
+        <div>l</div>
+        <div>Enter</div>
+
+        <!-- row-4 -->
+
+        <div>Shift</div>
+        <div>z</div>
+        <div>x</div>
+        <div>c</div>
+        <div>v</div>
+        <div>b</div>
+        <div>n</div>
+        <div>m</div>
+        <div><</div>
+        <div>></div>
+        <div>shift</div>
+
+        <!-- row-5 -->
+
+        <div><i class="fa-solid fa-globe"></i></div>
+        <div>Ctrl</div>
+        <div>Option</div>
+        <div>Alt</div>
+        <div>Space</div>
+        <div>Alt</div>
+        <div>Option</div>
+        <div><i class="fa-solid fa-left-long"></i></div>
+        <div><i class="fa-solid fa-right-long"></i></div>
+
+    </div>
+
+
+</body>
+
+</html>
